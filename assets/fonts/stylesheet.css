@@ -1,0 +1,21 @@
+@font-face {
+    font-family: 'YS Text';
+    src: url('YSText-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;    
+}
+
+@font-face {
+    font-family: 'YS Text';
+    src: url('YSText-Black.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;    
+}
+
+@font-face {
+    font-family: 'YS Text';
+    src: url('YSText-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;    
+}
+
