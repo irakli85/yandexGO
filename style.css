@@ -1,0 +1,81 @@
+:root{
+    --black : #21201F;
+    --yellow : #FFDE40;
+    --gray : #C5C5C5;
+}
+
+*{
+    font-family: 'YS Text';
+    font-size: 62.5%;
+    font-style: normal;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: var(--black);
+}
+
+body{
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.00) 0%, #FFF 100%);
+}
+
+
+main{
+    width: 100%;
+    height: 63.6rem;
+    padding: 3.2rem;
+    background: linear-gradient(0deg, rgba(255, 255, 255, 0.20) 0%, rgba(255, 255, 255, 0.20) 100%),
+     linear-gradient(90deg,
+      rgba(255, 92, 77, 0.22) 0%,
+      rgba(235, 70, 159, 0.22) 25%,
+      rgba(131, 65, 239, 0.22) 72%, 
+      rgba(63, 104, 249, 0.22) 100%);
+}
+
+h1{
+    font-size: 3.6rem;
+    font-weight: 900;
+    line-height: 100%; /* 36px */
+    letter-spacing: -0.72px;
+    margin-top: 3.2rem;
+}
+
+main p{
+    margin-top: 3.5rem;
+    font-size: 1.8rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 130%;
+}
+
+.main-price1{
+    display: inline-flex;
+    /* padding: 5px 8px 5px 7px; */
+    padding-left: 8px;
+    padding-right: 7px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 500px;
+    background: var(--Radial, radial-gradient(141.42% 141.42% at 100% 0%, #E0B8FF 0%, #B6B9FF 100%));
+    font-size: 1.8rem;
+    font-weight: 500;
+    line-height: 120%;
+    position: relative;
+    z-index: 1; /* 21.6px */
+}
+
+.main-price2{
+    display: inline-flex;
+    justify-content: end;
+    align-items: center;
+    padding-right: 5px;
+    color: #808080;
+    font-size: 1.3rem;
+    font-weight: 500;
+    line-height: 120%; /* 15.6px */
+    border-radius: 500px;
+    background: linear-gradient(0deg, rgba(241, 241, 241, 0.60) 0%, rgba(241, 241, 241, 0.60) 100%), radial-gradient(141.42% 141.42% at 100% 0%, #E0B8FF 0%, #B6B9FF 100%);
+    width: 7.5rem;
+    height: 2.3rem;
+    transform: translateX(-5px);
+}
+
