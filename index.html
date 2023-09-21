@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta property="og:image" content="./assets/desktop/og.png" />
     <title>Yandex GO</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
     <link rel="stylesheet" href="./assets/fonts/fontstyle.css">
     <link rel="stylesheet" href="style.css">
 </head>
@@ -16,41 +17,44 @@
             <img src="./assets/mobile/logom.png" alt="logo">
         </div>
         <h1>Вступайте<br> в клуб<br> Самокатов</h1>
-        <p>Купите абонемент, чтобы стать частью клуба в новом сезоне–2024. 8 месяцев за 
-            <span class="main-price1">499 ₽</span>
-            <span class="main-price2">3190 ₽</span>
-        </p>
-        <button>Стать частью клуба</button>
+        <div class="price-info">
+            <p>Купите абонемент, чтобы стать частью клуба в новом сезоне–2024. 8 месяцев за </p>
+            <div class="main-price">
+                <span class="main-price1">499 ₽</span>
+                <span class="main-price2">3190 ₽</span>
+            </div>
+        </div>        
+        <button class="main-btn1">Стать частью клуба</button>
     </main>
-
+    <button class="main-btn">Стать частью клуба</button>
 <!-- SECTION ADVANTAGES -->
-    <section>
+    <section class="advantages">
         <h2>Вот что даёт участие в клубе</h2>
-        <div>
+        <div class="advantage-items">
 
-            <div>
-                <div>
+            <div class="advantage-item">
+                <div class="advantage-icon">
                     <img src="./assets/desktop/1.png" alt="zero">
                 </div>
                 <p>0 ₽ за старт в каждой поездке</p>
             </div>
 
-            <div>
-                <div>
+            <div class="advantage-item">
+                <div class="advantage-icon">
                     <img src="./assets/desktop/2.png" alt="zero">
                 </div>
                 <p>Катаетесь с друзьями? Бронируйте до трёх самокатов с аккаунта с абонементом — так у всех будет бесплатный старт</p>
             </div>
 
-            <div>
-                <div>
+            <div class="advantage-item">
+                <div class="advantage-icon">
                     <img src="./assets/desktop/3.png" alt="zero">
                 </div>
                 <p>Бесплатная пауза 15 минут в поездке — например, чтобы зайти за кофе или передохнуть</p>
             </div>
 
-            <div>
-                <div>
+            <div class="advantage-item">
+                <div class="advantage-icon">
                     <img src="./assets/desktop/4.png" alt="zero">
                 </div>
                 <p>Если самокат недостаточно заряжен или с ним неудобно переходить дорогу, замените по пути на другой — это бесплатно</p>
@@ -60,21 +64,23 @@
     </section>
 
     <!-- SECTION GALLERY -->
-    <section>
-        <div>
+    <section class="gallery">
+        <div class="gallery-info">
             <h2>Эксклюзивный доступ к событиям Самокатов</h2>
             <p>С абонементом — у вас доступ к специальным мероприятиям, скидки и классный мерч. В 2023 году мы танцевали на Даче Плюс с Антохой MC, катались на самокатах с Сергеем Мезенцевым и слушали хор Attaque de Panique            
             </p>
         </div>
         <div>
-            <div>
-                <img src="./assets/desktop/11.png" alt="pic1">
-                <img src="./assets/desktop/22.png" alt="pic2">
-            </div>
-            <div>
-                <img src="./assets/desktop/33.png" alt="pic3">
-                <img src="./assets/desktop/44.png" alt="pic4">                
-            </div>
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide"><img src="./assets/mobile/1.png" alt="photo"></div>
+                  <div class="swiper-slide"><img src="./assets/mobile/2.png" alt="photo"></div>
+                  <div class="swiper-slide"><img src="./assets/mobile/3.png" alt="photo"></div>
+                  <div class="swiper-slide"><img src="./assets/mobile/4.png" alt="photo"></div>      
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+              </div>
         </div>
     </section>
 
@@ -106,6 +112,16 @@
     <footer>
         <p>Доп. опция «Абонемент на самокаты» на 8 месяцев (240 дней) активируется автоматически с момента старта сезона 2024 г. самокатов Яндекс Go, далее предусмотрено автопродление доп.опции за 399 руб./мес. Сертификат на доп.опцию «Абонемент на самокаты» на 8 месяцев оформляется на условиях документа yandex.ru/legal/scooters_seasonpass. Доп.опция доступна пользователям с активной подпиской (условия подписки: yandex.ru/legal/yandex_plus_conditions), есть ограничения, подробнее: yandex.ru/legal/yandex_plus_opzii_list. В случае отсутствия у пользователя активной подписки на дату активации доп.опции, пользователю предоставляется 7 дней подписки Яндекс Плюс бесплатно, далее автопродление — 299 руб./мес. Электросамокаты Яндекс Go — сервис аренды электросамокатов на условиях: clck.ru/gwDGn. 0+</p>
     </footer>
-   
+
+    <!-- SCRIPTS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+          navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+          },
+        });
+      </script>
 </body>
 </html>
