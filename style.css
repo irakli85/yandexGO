@@ -24,12 +24,11 @@ body{
 main{
     width: 100%;
     height: 63.6rem;
-    padding: 3.2rem;
+    padding-inline: 8.53%;
+    padding-top: 3.2rem;     
+    background-image: url('./assets/desktop/orig.webp'), url('./assets/mobile/sktr.png');
+    /* background-position: top, bottom; */
      
-    background-image: url('./assets/desktop/orig.webp'), url('./assets/mobile/sktr.png');     
-    background-size: cover;         
-    background-repeat:repeat, no-repeat;
-    background-position:top 0 left 0, bottom;      
 }
 
 h1{
@@ -42,9 +41,11 @@ h1{
 
 .price-info{
     margin-top: 3.5rem;
+    max-width: 31.1rem;
+
 }
 
-main p{
+.price-info p{
     display: inline;
     margin-top: 3.5rem;
     font-size: 1.8rem;
@@ -88,6 +89,7 @@ main p{
     background: linear-gradient(0deg, rgba(241, 241, 241, 0.60) 0%, rgba(241, 241, 241, 0.60) 100%), radial-gradient(141.42% 141.42% at 100% 0%, #E0B8FF 0%, #B6B9FF 100%);
     width: 7.5rem;
     height: 2.3rem;
+    text-decoration: line-through;
 }
 
 .main-btn{
@@ -119,7 +121,7 @@ main p{
 
 .advantages{
     margin-top: 4rem;
-    padding-inline: 3.2rem;
+    padding-inline: 8.53%;
 }
 
 .advantages h2{
@@ -158,7 +160,7 @@ main p{
 
 .gallery{
     margin-top: 7.2rem;
-    padding-inline: 3.2rem;
+    padding-inline: 8.53%;
 }
 
 .gallery-info h2{
@@ -233,7 +235,7 @@ main p{
 
   .services{
     margin-top: 7.2rem;
-    padding-inline: 3.2rem;
+    padding-inline: 8.53%;
   }
 
   .service-info h3{
@@ -262,7 +264,7 @@ main p{
   }
 
   footer{
-    padding-inline: 3.2rem;
+    padding-inline: 8.53%;
     padding-bottom: 12rem;
   }
 
