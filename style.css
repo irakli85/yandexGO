@@ -26,9 +26,12 @@ main{
     height: 63.6rem;
     padding-inline: 8.53%;
     padding-top: 3.2rem;     
-    background-image: url('./assets/desktop/orig.webp'), url('./assets/mobile/sktr.png');
-    /* background-position: top, bottom; */
-     
+    background-image: url('./assets/desktop/orig.webp');
+}
+
+.scooter-img img{
+    width: 100%;
+    
 }
 
 h1{
