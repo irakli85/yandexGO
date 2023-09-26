@@ -279,12 +279,15 @@ h1{
     padding-bottom: 12rem;
   }
 
-  footer p{
+  .footer-info,
+  .footer-info a{
     color: #C5C5C5;
     font-size: 1rem;
     font-weight: 400;
     line-height: 120%; 
   }
+
+  
 
 
   @media screen and (min-width: 1440px){
