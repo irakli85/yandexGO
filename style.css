@@ -332,10 +332,7 @@ h1{
         z-index: 2;
     }
 
-    .main-price{
-        /* transform: translateX(-45rem); */
-    }
-
+    
     .main-price1{
         font-size: 2.4rem;
     }
@@ -387,9 +384,26 @@ h1{
         align-items: flex-start;
         max-width: 40rem;        
     } 
-    
 
+    .advantage-item p {
+        font-size: 2.4rem;
+    }
 
+    .gallery {
+        margin-top: 12.8rem;
+        padding-left: 18.2%;
+    }
+
+    .gallery-info h2 {
+        font-size: 4.8rem;
+        max-width: 60rem;
+    }
+
+    .gallery-info p {
+        margin-top: 4.8rem;
+        max-width: 44rem;
+        font-size: 2.4rem;
+    }
   }
 
 
