@@ -297,10 +297,16 @@ h1{
     main{
         padding-left: 18.2%;
         padding-top: 12.5rem;
-        height: 80.4rem;      
-        background-image: url('./assets/desktop/orig.webp');
-        background-position: top 0 left 0;
+        height: 100.4rem;       
         background-size: cover;
+    }
+
+    main::after{
+        background-image: url('./assets/desktop/smkt1.png');
+        width: 79.4rem;
+        height: 61.8rem;
+        top: 11rem;
+        left: 57rem;
     }
 
     .logo{
@@ -312,16 +318,20 @@ h1{
         margin-top: 7.2rem;
         font-size: 7.2rem;
         letter-spacing: -1.44px;
+        position: relative;
+        z-index: 2;
     }
 
     .price-info p{
         display: inline-block;
         font-size: 2.4rem;
-        max-width: 46.5rem;
+        min-width: 46.5rem;
+        position: relative;
+        z-index: 2;
     }
 
     .main-price{
-        transform: translateX(-45rem);
+        /* transform: translateX(-45rem); */
     }
 
     .main-price1{
@@ -351,6 +361,7 @@ h1{
         font-weight: 500;
         border: none;
         cursor: pointer;
+        text-decoration: none;
     }
 
     .advantages{
